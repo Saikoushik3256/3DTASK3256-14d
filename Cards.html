@@ -29,17 +29,28 @@
     }
 
     .gallery img, .gallery video {
-      width: 300px; /* Adjust the width as needed */
-      height: 300px; /* Adjust the height as needed */
-      object-fit: contain; /* Ensure the entire image or video is visible within the container */
+      width: 300px; 
+      height: 300px; 
+      object-fit: contain;
       margin: 10px;
       border-radius: 8px;
       cursor: pointer;
       transition: transform 0.3s ease-in-out;
+      animation: rotate 6s infinite linear; 
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     .gallery img:hover, .gallery video:hover {
       transform: scale(1.1);
+      animation: none; 
     }
 
     footer {
@@ -60,10 +71,10 @@
   </header>
   
   <div class="gallery">
-    <!-- Replace "image1.jpg" with your actual image path -->
+    
     <img src="Hospi.png" alt="pic1">
     <video controls>
-      <source src="illusion.mp4" type="video/mp4"> <!-- Replace "your_video.mp4" with your actual video file -->
+      <source src="illusion.mp4" type="video/mp4"> 
       Your browser does not support the video tag.
     </video>
     <img src="LOGO.png" alt="3D pic3">
@@ -71,7 +82,7 @@
     <img src="image gallery.png" alt="3D pic5">
     
     <video controls>
-      <source src="animation.mp4" type="video/mp4"> <!-- Replace "your_video.mp4" with your actual video file -->
+      <source src="animation.mp4" type="video/mp4"> 
       Your browser does not support the video tag.
     </video>
   </div>

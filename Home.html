@@ -15,7 +15,7 @@
 
     header {
       background-color: #333;
-      color:yellow;
+      color: yellow;
       padding: 15px;
       text-align: center;
     }
@@ -56,6 +56,42 @@
       transform: scale(1.1);
     }
 
+    .testimonial-section {
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 20px;
+      overflow-y: auto;
+      max-height: 150px;
+      border-radius: 8px;
+      opacity: 0;
+      animation: rotateAndFade 4s ease-in-out forwards;
+    }
+
+    @keyframes rotateAndFade {
+      0% {
+        transform: rotate(0deg);
+        opacity: 0;
+      }
+      25% {
+        transform: rotate(90deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      75% {
+        transform: rotate(270deg);
+      }
+      100% {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+    .testimonial {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
     footer {
       background-color: #333;
       color: yellow;
@@ -78,7 +114,6 @@
   </nav>
 
   <div class="gallery">
-    <!-- Include at least six images here -->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVoF3njceQcZgwUoDjGPSJK6I3weCOY3Vjs2lLgM0EtCOw95xkfOaue1xgHjVmyl6kzTo&usqp=CAU" height="200" width="100" alt="webwiz pic1">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYd0Oav0Kv-S7E4Kk6E7KKc9yez3xcKsI1uQ&usqp=CAU" alt="webwiz pic2">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ451kOPRrLAI3cy6t_MDY8JXUiaNdf89Jung&usqp=CAU" alt="webwiz pic 3">
@@ -87,8 +122,15 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbOLpk8nv_jN9NwOsPBQuK7lmUT1E_SnhEQ&usqp=CAU" alt="webwiz pic 6">
   </div>
 
+  <div class="testimonial-section">
+    <div class="testimonial">"HEY GUYS PRESENTING YOU A WEBSITE OF AN ART GALLERY WITH SIX DIFFERENT IMAGES"</div>
+    <div class="testimonial">"Integer nec sapien nec ligula luctus commodo. Sed aliquam sapien eu elit posuere, nec feugiat sem efficitur."</div>
+    <div class="testimonial">"Aenean hendrerit nulla vel risus facilisis, vitae vestibulum arcu ultricies. In ac metus non elit scelerisque fermentum."</div>
+    <!-- Add more testimonials as needed -->
+  </div>
+
   <footer>
-    &copy; 2023 Image Gallery
+    &copy; 2024 Image Gallery
   </footer>
 
 </body>
